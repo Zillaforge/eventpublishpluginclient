@@ -1,0 +1,20 @@
+syntax= "proto3";
+package protos;
+option go_package = "../pb;pb";
+import "http_request.proto";
+import "common.proto";
+import "reconcile.proto";
+import "rpc_router.proto";
+import "google/protobuf/empty.proto";
+
+service EventPublishPluginInterfaceCRUDController {
+    rpc GetName(google.protobuf.Empty) returns (GetNameResponse) {}
+    rpc GetVersion(google.protobuf.Empty) returns (GetVersionResponse) {}
+    rpc SetConfig(SetConfigRequest) returns (google.protobuf.Empty) {}
+    rpc CheckPluginVersion(google.protobuf.Empty) returns (CheckVersionResponse) {}
+    rpc InitPlugin(google.protobuf.Empty) returns (InitPluginResponse) {}
+    rpc Reconcile(ReconcileRequest) returns (google.protobuf.Empty) {}
+    rpc CallGRPCRouter(RPCRouterRequest) returns (RPCRouterResponse) {}
+    rpc EnableHttpRouter(HttpRequestInfo) returns (HttpResponseInfo) {}
+    rpc GetRouter(google.protobuf.Empty) returns (GetRouterResponseList) {}
+}

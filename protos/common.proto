@@ -1,0 +1,23 @@
+syntax = "proto3";
+package protos;
+option go_package = "../pb;pb";
+
+message GetNameResponse {
+	string Name=1;
+}
+
+message GetVersionResponse {
+	string Version=1;
+}
+
+message SetConfigRequest {
+	bytes Conf=1;
+}
+
+message CheckVersionResponse{
+	bool IsMatch=1;
+}
+
+message InitPluginResponse{
+	bool IsEnable=1;
+}

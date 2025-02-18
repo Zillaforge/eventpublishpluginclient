@@ -1,0 +1,14 @@
+syntax = "proto3";
+package protos;
+option go_package = "../pb;pb";
+
+message RPCRouterRequest {
+	string Operator=1;
+	map<string, string> Hdr=2;
+	bytes Payload=3;
+}
+
+message RPCRouterResponse {
+	map<string, string> Hdr=1;
+	bytes Payload=2;
+}

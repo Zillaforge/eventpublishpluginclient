@@ -1,0 +1,10 @@
+syntax = "proto3";
+package protos;
+option go_package = "../pb;pb";
+
+message ReconcileRequest {
+	string Action = 1;
+  	map<string, string> Metadata = 2;
+  	bytes Request = 3;
+  	bytes Response = 4;
+}

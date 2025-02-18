@@ -1,0 +1,29 @@
+syntax = "proto3";
+package protos;
+option go_package = "../pb;pb";
+
+message HttpRequestInfo {
+	string Method=1;
+	map<string, string> Headers=2;
+	bytes Body=3;
+	string Path=4;
+	map<string, string> Params=5;
+	map<string, string> Query=6;
+}
+
+message HttpResponseInfo {
+	int32 StatusCode=1;
+	bytes Body=2;
+}
+
+message GetRouterResponse {
+	string Method=1;
+	string Path=2;
+	string ActionName=3;
+	int32 ActionID=4;
+	bool Administrator=5;
+}
+
+message GetRouterResponseList {
+  repeated GetRouterResponse response = 1;
+}
