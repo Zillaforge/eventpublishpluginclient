@@ -2,7 +2,7 @@ INPUT_FOLDER ?= protos
 OUPUT_FOLDER ?= pb
 PROTOVERSION ?= 4.22.0
 OWNER ?= ociscloud
-PREVERSION ?= 0.2.2
+PREVERSION ?= 0.2.3
 VERSION ?= $(shell cat VERSION)
 PWD := $(shell pwd)
 
