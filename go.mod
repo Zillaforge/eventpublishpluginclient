@@ -6,7 +6,7 @@ require (
 	github.com/gin-gonic/gin v1.10.0
 	google.golang.org/grpc v1.69.2
 	google.golang.org/protobuf v1.36.2
-	pegasus-cloud.com/aes/toolkits v0.4.3
+	pegasus-cloud.com/aes/toolkits v0.4.5
 )
 
 require (
