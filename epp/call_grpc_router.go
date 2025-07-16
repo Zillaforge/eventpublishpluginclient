@@ -3,8 +3,8 @@ package epp
 import (
 	"context"
 
-	"pegasus-cloud.com/aes/eventpublishpluginclient/pb"
-	"pegasus-cloud.com/aes/eventpublishpluginclient/utility"
+	"github.com/Zillaforge/eventpublishpluginclient/pb"
+	"github.com/Zillaforge/eventpublishpluginclient/utility"
 )
 
 func callGRPCRouter(c client, input *pb.RPCRouterRequest, ctxs ...context.Context) (output *pb.RPCRouterResponse, err error) {

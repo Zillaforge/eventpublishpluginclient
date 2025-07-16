@@ -1,7 +1,7 @@
 package constants
 
 import (
-	tkErr "pegasus-cloud.com/aes/toolkits/errors"
+	tkErr "github.com/Zillaforge/toolkits/errors"
 )
 
 const (

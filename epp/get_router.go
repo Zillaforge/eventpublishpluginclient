@@ -3,9 +3,9 @@ package epp
 import (
 	"context"
 
+	"github.com/Zillaforge/eventpublishpluginclient/pb"
+	"github.com/Zillaforge/eventpublishpluginclient/utility"
 	"google.golang.org/protobuf/types/known/emptypb"
-	"pegasus-cloud.com/aes/eventpublishpluginclient/pb"
-	"pegasus-cloud.com/aes/eventpublishpluginclient/utility"
 )
 
 func getRouter(c client, ctxs ...context.Context) (output *pb.GetRouterResponseList, err error) {

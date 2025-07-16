@@ -3,8 +3,8 @@ package epp
 import (
 	"context"
 
-	"pegasus-cloud.com/aes/eventpublishpluginclient/pb"
-	"pegasus-cloud.com/aes/eventpublishpluginclient/utility"
+	"github.com/Zillaforge/eventpublishpluginclient/pb"
+	"github.com/Zillaforge/eventpublishpluginclient/utility"
 )
 
 func enableHttpRouter(c client, input *pb.HttpRequestInfo, ctxs ...context.Context) (output *pb.HttpResponseInfo, err error) {

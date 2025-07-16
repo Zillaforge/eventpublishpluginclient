@@ -1,10 +1,11 @@
 INPUT_FOLDER ?= protos
 OUPUT_FOLDER ?= pb
 PROTOVERSION ?= 4.22.0
-OWNER ?= ociscloud
+OWNER ?= Zillaforge
 PREVERSION ?= 0.2.3
 VERSION ?= $(shell cat VERSION)
 PWD := $(shell pwd)
+OS := ubuntu
 
 sed = sed
 ifeq ("$(shell uname -s)", "Darwin")	# BSD sed, like MacOS

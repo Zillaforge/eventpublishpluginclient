@@ -5,14 +5,14 @@ import (
 	"fmt"
 	"time"
 
+	cnt "github.com/Zillaforge/eventpublishpluginclient/constants"
+	"github.com/Zillaforge/eventpublishpluginclient/utility"
+	tkErr "github.com/Zillaforge/toolkits/errors"
+	"github.com/Zillaforge/toolkits/tracer"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/connectivity"
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/credentials/insecure"
-	cnt "pegasus-cloud.com/aes/eventpublishpluginclient/constants"
-	"pegasus-cloud.com/aes/eventpublishpluginclient/utility"
-	tkErr "pegasus-cloud.com/aes/toolkits/errors"
-	"pegasus-cloud.com/aes/toolkits/tracer"
 )
 
 var _ EPPFuncs = (*PoolHandler)(nil)
